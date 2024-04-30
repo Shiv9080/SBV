@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoang Nguyen's Booking Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images\logo.png" alt="Hoang Nguyen Logo" height="60">
+        </div>
+        <nav id="navbarNav">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <img src="menu-icon.png" alt="Menu icon" height="30">
+        </div>
+    </header>
+
+    <section class="hero-header">
+        <h1>Welcome to Hoang Nguyen's Services</h1>
+        <p>Discover the best solutions for your booking needs.</p>
+        <div class="hero-buttons">
+            <button onclick="location.href='#services';">Explore</button>
+            <button onclick="location.href='#contact';">Learn More</button>
+        </div>
+        <div class="hero-image">
+        </div>
+    </section>
+    
+    <section class="feature-section">
+        <div class="feature-text">
+            <h2>Discover the Easiest Way to Book Your Appointments with Hoang Nguyen</h2>
+            <p>Welcome to Hoang Nguyen's booking platform, where you can effortlessly schedule your appointments and save time.</p>
+            <ul>
+                <li>Streamlined booking process</li>
+                <li>Convenient appointment management</li>
+                <li>Efficient time-saving solution</li>
+            </ul>
+        </div>
+        <div class="feature-image">
+            <img src="images\feature.jpg" alt="Feature Image Description">
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-items">
+                <div class="testimonial">
+                    <p>"This booking system is incredibly easy to use and has streamlined how I manage my appointments."</p>
+                    <h3>John Doe, Student</h3>
+                </div>
+                <div class="testimonial">
+                    <p>"Thanks to this intuitive interface, scheduling meetings has never been smoother."</p>
+                    <h3>Jane Smith, Colleague</h3>
+                </div>
+                <div class="testimonial">
+                    <p>"I love the custom message feature which allows me to prepare in advance for my meetings."</p>
+                    <h3>Emily White, Client</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta">
+        <div class="container">
+            <h2>Start Your Booking Experience Now</h2>
+            <p>Explore our convenient booking options and secure your appointment</p>
+            <div class="buttons">
+                <button onclick="location.href='booking.html'">Book</button>
+                <button onclick="location.href='info.html'">Learn More</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated with Our Newsletter</h2>
+            <p>Subscribe to receive the latest updates, blog posts, and more.</p>
+            <form action="subscribe.php" method="POST">
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <button type="submit">Subscribe Now</button>
+                <p class="disclaimer">By subscribing, you agree to our Terms and Conditions.</p>
+            </form>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <p>Have a question or need assistance? Get in touch with us!</p>
+            <div class="contact-details">
+                <div class="email">
+                    <h3>Email</h3>
+                    <p>Send us an email</p>
+                    <a href="mailto:hello@example.io">hello@example.io</a>
+                </div>
+                <div class="phone">
+                    <h3>Phone</h3>
+                    <p>Give us a call</p>
+                    <a href="tel:+1555008000">+1 555-008-0000</a>
+                </div>
+                <div class="office">
+                    <h3>Office</h3>
+                    <p>123 Sample St, Sydney NSW 2000 AU</p>
+                    <a href="https://maps.google.com">Get Directions</a>
+                </div>
+            </div>
+            <div class="map">
+                <img src="map-placeholder.png" alt="Map Location" />
+            </div>
+        </div>
+    </section>
+    
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="#"><img src="images\logo.png" alt="Logo"></a>
+            </div>
+            <ul class="footer-nav">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms and Conditions</a> |
+                <a href="#">Cookie Policy</a>
+            </div>
+            <div class="copy-right">
+                © 2024 Hoang Nguyen. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            menuToggle.onclick = function () {
+                navLinks.classList.toggle('active');
+            };
+        });
+    </script>
+    
+                   
+</body>
+</html>
